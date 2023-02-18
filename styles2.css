@@ -4,6 +4,15 @@
     color: #FA5456;
 }
 
+#navbar {
+    font-size: 100px;
+    font-family: 'Inter', sans-serif;
+    color: #FA5456;
+
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
 /*  COLOR THEME
     #06B2BB
     #FDD219
