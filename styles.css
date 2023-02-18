@@ -2,7 +2,6 @@
     font-size: 100px;
     font-family: 'Inter', sans-serif;
     color: #FA5456;
-
     margin-top: 0px;
     margin-bottom: 20px;
 }
@@ -38,8 +37,8 @@ img {
     width: 4%;
     height: 4%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 47%;
+    margin-right: 47%;
     transition: all 0.125s;
     cursor: pointer;
 }
@@ -62,19 +61,19 @@ ul {
     float: left;
   }
   
-  li a {
+li a {
     display: block;
     color: #FDD219;
     padding: 8px 16px;
     text-decoration: none;
     font-family: 'Inter';
-  }
+}
   
   /* Change the link color on hover */
-  li a:hover {
+li a:hover {
     background-color: #FDD219;
     color:  #FA5456;
-  }
+}
   
 /*  COLOR THEME
     #06B2BB
