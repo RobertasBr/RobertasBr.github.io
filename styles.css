@@ -1,9 +1,12 @@
 #navbar {
     font-size: 100px;
     font-family: 'Inter', sans-serif;
-    color: #FA5456;
     margin-top: 0px;
     margin-bottom: 20px;
+}
+
+body {
+    margin: 0;
 }
 
 h3 {
@@ -33,20 +36,35 @@ h1 {
     text-align: center;
 }
 
-img {
-    width: 4%;
-    height: 4%;
-    display: block;
-    margin-left: 47%;
-    margin-right: 47%;
-    transition: all 0.125s;
-    cursor: pointer;
+#cssid, #htmlid {
+    width: 0;
+    margin: auto;
+    position:relative;
+    left: -20px;
 }
 
-img:hover {
-    width: 150px;
-    height: 150px;
+#cssid img{
+    height: 54px;
+}
+
+#cssid img:hover {
+    height: 64px;
     transition: all 0.25s;
+}
+
+#htmlid img {
+    height: 54px;
+}
+
+#htmlid img:hover {
+    height: 64px;
+    transition: all 0.25s;
+}
+
+img {
+    transition: all 0.125s;
+    cursor: pointer;
+    position: relative;
 }
 
 ul {
@@ -55,15 +73,13 @@ ul {
     padding: 0;
     width: 200px;
     height: 100vh;
-    position:sticky;
     background-color: #FA5456;
-    position: relative;
     float: left;
   }
   
 li a {
     display: block;
-    color: #FDD219;
+    color: #ffffff;
     padding: 8px 16px;
     text-decoration: none;
     font-family: 'Inter';
@@ -71,10 +87,23 @@ li a {
   
   /* Change the link color on hover */
 li a:hover {
-    background-color: #FDD219;
+    background-color: #ffffff;
     color:  #FA5456;
 }
-  
+
+#topbar {
+    background-color: #06B2BB;
+    height: 60px;
+}
+
+#topbar h1 {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    color: white;
+    position: relative;
+    top: 10px;
+}
 /*  COLOR THEME
     #06B2BB
     #FDD219

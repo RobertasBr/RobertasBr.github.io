@@ -7,8 +7,6 @@
 #navbar {
     font-size: 100px;
     font-family: 'Inter', sans-serif;
-    color: #FA5456;
-
     margin-top: 0px;
     margin-bottom: 20px;
 }
@@ -27,7 +25,7 @@ ul {
 
 li a {
     display: block;
-    color: #FDD219;
+    color: #ffffff;
     padding: 8px 16px;
     text-decoration: none;
     font-family: 'Inter';
@@ -35,12 +33,16 @@ li a {
   
   /* Change the link color on hover */
 li a:hover {
-    background-color: #FDD219;
+    background-color: #ffffff;
     color:  #FA5456;
 }
 
 h1 {
     margin-top: 0;
+}
+
+body {
+    margin: 0;
 }
 /*  COLOR THEME
     #06B2BB
