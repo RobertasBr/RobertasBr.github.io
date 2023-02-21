@@ -5,42 +5,55 @@
     margin-bottom: 20px;
 }
 
+#logo {
+    height: 60px;
+    float: left;
+    position: absolute;
+    padding-right: 50px;
+    overflow: hidden;
+}
+
+#contact {
+    margin-top: 570px;
+    text-align: center;
+}
+
 body {
     margin: 0;
+    background-color: #121212;
+    overflow: hidden;
 }
 
 h3 {
     color: #06B2BB;
     font-size: 64px;
     margin: auto;
+    margin-left: 420px;
     width: 50%;
-
     padding: 10px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 15px;
     font-family: 'Inter', sans-serif;
+    padding-top: 40px;
+    position:relative;
 }
 
 p {
-    color: #06B2BB;
+    color: #ffffff;
     font-size: 18px;
-    margin: auto;
+    margin-left: 350px;
     width: 50%;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 15px;
+    padding-left: 10px;
+    text-align: left;
+    margin-bottom: 5px;
     font-family: 'Inter', sans-serif;
+    padding-right: 10px;
+    min-width: 100px;
 }
 
 h1 {
     text-align: center;
-}
-
-#cssid, #htmlid {
-    width: 0;
-    margin: auto;
-    position:relative;
-    left: -20px;
+    padding-left: 50px;
 }
 
 #cssid img{
@@ -49,7 +62,6 @@ h1 {
 
 #cssid img:hover {
     height: 64px;
-    transition: all 0.25s;
 }
 
 #htmlid img {
@@ -58,42 +70,54 @@ h1 {
 
 #htmlid img:hover {
     height: 64px;
-    transition: all 0.25s;
 }
 
 img {
-    transition: all 0.125s;
-    cursor: pointer;
+    float: left;
+    left: 13%;
     position: relative;
+    margin-top: -95px;
+    left: 208px;
 }
 
 ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 150px;
     height: 100vh;
-    background-color: #FA5456;
+    background-color: #07534d;
     float: left;
   }
   
 li a {
     display: block;
-    color: #ffffff;
-    padding: 8px 16px;
+    color: #06B2BB;
+    padding: 8px 8px;
     text-decoration: none;
     font-family: 'Inter';
+    margin-top: 40px;
+    font-size: 1.5em;
+    text-align: center;
 }
   
   /* Change the link color on hover */
 li a:hover {
     background-color: #ffffff;
-    color:  #FA5456;
+    color:#07534d;
+    box-shadow: inset 150px 0 0 0 #06B2BB;
+    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+    color: white;
 }
 
 #topbar {
     background-color: #06B2BB;
     height: 60px;
+}
+
+#topbar img {
+    height: 60px;
+    margin-top: 0px;
+    left: 0px;
 }
 
 #topbar h1 {
@@ -103,10 +127,5 @@ li a:hover {
     color: white;
     position: relative;
     top: 10px;
+    min-width: 500px;
 }
-/*  COLOR THEME
-    #06B2BB
-    #FDD219
-    #F7882B
-    #FA5456
-*/
