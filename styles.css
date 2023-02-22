@@ -14,14 +14,19 @@
 }
 
 #contact {
-    margin-top: 570px;
+    position: absolute;
+    bottom: 40px;
+    width: 150px;
     text-align: center;
 }
 
 body {
     margin: 0;
     background-color: #121212;
-    overflow: hidden;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
 h3 {
@@ -36,6 +41,7 @@ h3 {
     font-family: 'Inter', sans-serif;
     padding-top: 40px;
     position:relative;
+    text-shadow: 0px 0px 8px #06B2BB;  
 }
 
 p {
@@ -56,11 +62,39 @@ h1 {
     padding-left: 50px;
 }
 
-#cssid img{
+h5 {
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    padding-top: 5px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+#footer {
+    background-color:#06B2BB;
+    position: absolute; 
+    left: 0 ; right: 0; bottom: 0; 
+    height: 30px;
+    transition: 0.65s all;
+}
+
+#footer:hover { 
+    background-color: #065b5f;
+    transition: 0.65s all;
+}
+
+#cssid, #htmlid {
+    padding-left: 155px;
+}
+
+#cssid img {
     height: 54px;
 }
 
 #cssid img:hover {
+    transition: 0.125s all;
     height: 64px;
 }
 
@@ -69,12 +103,12 @@ h1 {
 }
 
 #htmlid img:hover {
+    transition: 0.125s all;
     height: 64px;
 }
 
 img {
     float: left;
-    left: 13%;
     position: relative;
     margin-top: -95px;
     left: 208px;
@@ -84,7 +118,8 @@ ul {
     margin: 0;
     padding: 0;
     width: 150px;
-    height: 100vh;
+    height: 93vh;
+    position: absolute;
     background-color: #07534d;
     float: left;
   }
