@@ -66,6 +66,7 @@ p {
     font-family: 'Inter', sans-serif;
     padding-right: 10px;
     min-width: 100px;
+    cursor: default;
 }
 
 h1 {

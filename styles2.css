@@ -1,7 +1,5 @@
 * {
-    color: #06B2BB;
     font-family: 'Inter', sans-serif;
-    color: #FA5456;
 }
 
 #navbar {
@@ -60,6 +58,7 @@ li a:hover {
     position: relative;
     top: 10px;
     min-width: 500px;
+    white-space: nowrap
 }
 
 #contact {
@@ -73,6 +72,14 @@ h1 {
     margin-top: 0;
 }
 
+h2 {
+    position: relative;
+    color: white;
+    top: -900px;
+    left: 250px;
+    padding: 50px;
+}
+
 h5 {
     color: white;
     text-align: center;
@@ -81,6 +88,42 @@ h5 {
     margin-bottom: 0;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
+}
+
+p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 350px;
+    width: 50%;
+    padding-left: 10px;
+    text-align: left;
+    margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+    padding-right: 10px;
+    min-width: 100px;
+    cursor: default;
+}
+
+h3 {
+    color: #06B2BB;
+    text-shadow: 0px 0px 8px #06B2BB;  
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    text-align: left;
+    margin: auto;
+    margin-left: 350px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 50%;
+    padding-top: 40px;
+    position: relative;
+    transition: all 0.25s;
+}
+
+h3:hover {
+    text-shadow: 0px 0px 16px #06B2BB; 
+    transition: all 0.25s;
+    cursor: default;
 }
 
 #footer {
@@ -103,4 +146,5 @@ body {
     min-height: 100vh;
     flex-direction: column;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
