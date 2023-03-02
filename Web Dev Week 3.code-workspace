@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Dynamic Island"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Dynamic Island"
+	}
+}
