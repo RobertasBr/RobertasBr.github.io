@@ -1,5 +1,12 @@
 html {
     height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    /* outline: 2px solid red; */
 }
 
 #navbar {
@@ -32,14 +39,13 @@ body {
 h3 {
     color: #06B2BB;
     font-family: 'Inter', sans-serif;
-    font-size: 4em;
+    font-size: 4rem;
     text-align: left;
-    margin-top: 5vh;
-    margin-left: 420px;
+    top: 10px;
+    padding: 0;
+    left: 170px;
     margin-bottom: 15px;
-    padding: 10px;
-    width: 50%;
-    padding-top: 40px;
+    margin-top: 40px;
     position: relative;
     transition: all 0.25s;
 }
@@ -52,22 +58,19 @@ h3:hover {
 
 p {
     color: #ffffff;
-    font-size: 1.1  em;
-    margin-left: 350px;
-    width: 50%;
-    padding-left: 10px;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    position: relative;
+    margin-left: 11rem;
+    padding-right: 1rem;
     text-align: left;
     margin-bottom: 35px;
     font-family: 'Inter', sans-serif;
-    padding-right: 10px;
-    min-width: 100px;
     cursor: default;
 }
 
 h1 {
     text-align: center;
     padding-left: 55px;
-    font-size: 2em;
 }
 
 h5 {
@@ -97,20 +100,11 @@ h5 {
     padding-left: 155px;
 }
 
-#cssid img {
+#cssid img, #htmlid img {
     height: 54px;
 }
 
-#cssid img:hover {
-    transition: 0.125s all;
-    height: 64px;
-}
-
-#htmlid img {
-    height: 54px;
-}
-
-#htmlid img:hover {
+#cssid img:hover, #htmlid img:hover {
     transition: 0.125s all;
     height: 64px;
 }
@@ -118,7 +112,7 @@ h5 {
 img {
     float: left;
     position: relative;
-    margin-top: -95px;
+    margin-top: -75px;
     left: 208px;
 }
 
@@ -158,14 +152,15 @@ li a:hover {
 
 #topbar {
     background-color: #06B2BB;
-    height: 7vh;
+    /* height: 7vh; */
     width: 100%;
-    position: relative;
+    position: absolute;
 }
 
 #topbar img {
-    height: 7vh;
-    position: sticky;
+    height: 6.5vh;
+    white-space:nowrap;
+    position: absolute;
     margin-top: 0px;
     left: 160px;
     float: left;
@@ -177,11 +172,102 @@ li a:hover {
     margin: 0;
     color: white;
     position: sticky;
-    font-size: 5vh;
+    font-size: clamp(1vh, 5vh, 7vh);
     padding-top: 0.5vh;
     left: 50%;
     right: 50%;
-    margin-left: 140px;
+    margin-left: 11rem;
     word-break: break-all;
     white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    #topbar h1 {
+        font-size: 3vh;
+    }
+    #topbar img {
+        height: 4vh;
+    }
+}
+
+@media (max-width: 600px) {
+    /* For mobile phones: */
+    ul {
+      width: 100vw;
+      margin: 0;
+      padding: 8px 8px;
+      height: 45px;
+      overflow-y: hidden;
+      position: relative;
+    }
+
+    li {
+        float: left;
+        height: auto;
+        list-style-type: none;
+    }
+
+    li a {
+        display: inline-block;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+        /* margin-right: 0.5rem;
+        margin-left: 0.5rem; */
+        font-size: 5vw;
+        
+    }
+
+    #topbar {
+        position: relative;
+        top: 0;
+        height: 9vw;
+    }
+
+    #topbar img {
+        left: 0;
+        height: 9vw;
+    }
+
+    #topbar h1 {
+        margin-left: 0;
+        padding-left: 0;
+        font-size: 5vw;
+        padding-top: 1.5vw;
+    }
+
+    p {
+        padding: 0;
+        margin: 0 auto;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+   #htmlid img, #cssid img {
+        float: left;
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+        left: -120px;
+        bottom: 0px;
+        top: -75px;
+        margin-bottom: -75px;
+    }
+
+    h3 {
+        position: relative;
+        left: 0;
+        margin-left: 5rem;
+        margin-top: 0px;
+    }
+
+    a {
+        display:flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    #topbar img {
+        height: 5.5vh;
+    }
 }
