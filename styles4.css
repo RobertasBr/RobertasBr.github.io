@@ -149,3 +149,15 @@ body {
     flex-direction: column;
     overflow-x: hidden;
 }
+
+#github {
+    margin-left: 345px;
+    font-size: 30px;
+    color: white;
+}
+
+#form {
+    display: inline-block;
+    margin-left: 345px;
+    color: white;
+}
